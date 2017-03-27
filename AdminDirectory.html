@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Document</title>
+			<link rel="stylesheet" type="text/css" href=style.css>
+    <style type ="text/css">
+		.heading{display:inline-block; width:100%;}
+		.trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
+		</style>
+	
+				</head>
+	<body>
+		<div class ="heading">
+			
+			<table border ="0" align="left" style="display:inline-table;">
+				<tr>
+					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
+					<td><a href="AdminDashboard.html" style="padding-right:10px">Home</a></td>
+					<td><a href="about.html" style="padding-right:10px">About Us</a></td>
+					<td><a href="locations.html" style="padding-right:10px">Locations</a></td>
+					<td><a href="contact.html" style="padding-right:10px">Contact Us</a></td>
+				</tr>
+			</table>
+			
+			<table border ="0" align="right" style="display:inline-table; padding-bottom: 1%;" >
+				<tr>
+					<td>Admin</td>
+					<td><a href="index.html"><button class="login" type="button">Logout</button></a></td>
+				</tr>
+			</table>
+			
+			
+		</div>
+		
+		<div class="trim">
+			<img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be changed-->
+				</div>
+		<style>
+			.container { position:absolute; padding:0 0 0 100%; }
+			#sidebar {position:absolute; left:2%;}
+			#header { border:0px solid #000; width:50%; height:20%; margin:0 0 5% 0;}
+			#content {position: absolute; left:15%; width:80%; height:50%; margin:0px 0px 0px ;}
+			#footer { position:absolute; left:0%; border:1px solid #000; width:100%; height:50px;}
+			</style>
+		<div class="container">
+			<nav>
+				<div id ="sidebar"><br><br>
+					
+					<a href="AdminDashboard.html">Dashboard</a><br><br>
+					<a href="AdminMessages.html">Messages</a><br><br>
+					<a href="AdminDirectory.html">Directory</a><br><br>
+					<a href="AdminAccount.html">Account</a>
+				</div>
+			</nav>
+			<div id="content">
+				<center style="padding-top: 2%; padding-bottom: 5%; font-size: large;">Directory</center>
+				<table border="2"; width=100%; height=180px;>
+					<tr height=5%; bgcolor=#C0C0C0>
+						<th>Resident</th>
+						<th>Unit</th>
+						<tr height=5% align=center>
+							<td><a href="AdminDirectory2.html">Carl Davis</a></td>
+							<td>4</td>
+						</tr>
+						<tr height=5% align=center>
+							<td>Jen Harris</td>
+							<td>5</td>
+						</tr>
+						<tr height=5% align=center>
+							<td>Matt Combs</td>
+							<td>1</td>
+						</tr>
+						<tr height=5% align=center>
+							<td>Steven Thomas</td>
+							<td>6</td>
+						</tr>
+						<tr height=5% align=center>
+							<td>Carl Davis</td>
+							<td>2</td>
+						</tr>
+						<tr height=5% align=center>
+							<td>Caroline Evans</td>
+							<td>3</td>
+						</tr>
+					</tr>
+				</table>
+			</div>
+	</body>
+</html>
