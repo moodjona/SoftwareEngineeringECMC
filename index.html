@@ -1,61 +1,129 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href=style.css>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Home</title>
+			<link rel="stylesheet" type="text/css" href=style.css>
     <style type ="text/css">
-        .heading{display:inline-block; width:100%;}
-        .trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
-    </style>
-
-  </head>
-  <body>
-      <div class ="heading">
-          
-         <table border ="0" align="left" style="display:inline-table;">
-              <tr>
-        <td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
-        <td><a href="index.html" style="padding-right:10px">Home</a></td>
-        <td><a href="about.html" style="padding-right:10px">About Us</a></td>
-        <td><a href="locations.html" style="padding-right:10px">Locations</a></td>
-        <td><a href="contact.html" style="padding-right:10px">Contact Us</a></td>
-          </tr>
-          </table>
-
-        <table border ="0" align="right" style="display:inline-table; padding-bottom: 1%;" >
-            <tr>
-                <td><input class="username" type="text" name="Username" placeholder="Username" style="border-width: 1px; border-radius: 4px"></td>
-                <td><input class="password" type="text" name="Password" placeholder="Password" style="border-width: 1px; border-radius: 4px"></td>
-                <td><button class="login" type="button">Login</button></td>
-            </tr>
-        </table>
-
-      
-      </div>
-
-      <div class="trim">
-      <img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be changed-->
-      </div>
-    <nav>
-    </nav>
-      <center style="padding-top: 2%; padding-bottom: 5%; font-size: large;">Welcome to Equity Captital Management Corporation!</center>
-
-      <div class ="content">
-
-  		<div border ="0" align="center" style="padding-bottom: 1%;" >
-  			<div class="ad1" style="margin-left: 1%; width: 10%; padding-right: 1%"></div>
-  			<div class="content" style="margin: center; width: 50%">
-                <center>
-                	<content style="margin: center; width: 20%; align-content: left">
-                		<text>
-                			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-                		</text>
-                	</content>
-                </center> 
-            <div class="ad2" style="margin-right: 1%; width: 10%;"></div> 
-        </div>
-  </body>
-  	</div>
+		.heading{display:inline-block; width:100%;}
+		.trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
+		div.gallery {
+			border: 1px solid #ccc;
+		}
+	
+	div.gallery:hover {
+		border: 1px solid #777;
+	}
+	
+	div.gallery img {
+		width: 100%;
+		height: 200px;
+	}
+	
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 24.99999%;
+	}
+	
+	@media only screen and (max-width: 700px){
+		.responsive {
+			width: 49.99999%;
+			margin: 6px 0;
+		}
+	}
+	
+	@media only screen and (max-width: 500px){
+		.responsive {
+			width: 100%;
+		}
+	}
+	
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+	
+				</head>
+	<body>
+		<div class ="heading">
+			
+			<table border ="0" align="left" style="display:inline-table">
+				<tr>
+					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
+					<td><a href="Home.html" style="margin-right:10px">Home</a></td>
+					<td><a href="about.html" style="margin-right:10px">About Us</a></td>
+					<td><a href="locations.html" style="margin-right:10px">Locations</a></td>
+					<td><a href="contact.html" style="margin-right:10px">Contact Us</a></td>
+				</tr>
+			</table>
+			
+			<table border ="0" align="right" style="display:inline-table" >
+				<tr>
+					<td><input class="username" type="text" name="Username" placeholder="Username" /></td>
+					<td><input class="password" type="text" name="Password" placeholder="Password"/></td>
+					<td><button type="submit" name="Login">Login</button></td>
+				</tr>
+			</table>
+			
+			
+		</div>
+		
+		<div class="trim">
+			<img class="img" src="Images/apartment_1.jpg" style="margin-top:-20%"><!-- margin-top is there to show a better part of the image, can be changed-->
+				</div>
+		<nav>
+		</nav>
+		<center><b>Welcome to Equity Captital Management Corporation</b></center>
+		
+		<div class="responsive">
+			<div class="gallery">
+    <a href="locations.html">
+		<img src="Images/apartment_2.jpg" alt="Locations" width="300" height="200">
+			</a>
+	<div class="desc"><b>Locations</b></div>
+			</div>
+		</div>
+		
+		
+		<div class="responsive">
+			<div class="gallery">
+    <a href="contact.html">
+		<img src="Images/apartment_3.jpg" alt="Contact" width="600" height="400">
+			</a>
+	<div class="desc"><b>Contact</b></div>
+			</div>
+		</div>
+		
+		<div class="responsive">
+			<div class="gallery">
+    <a href="about.html">
+		<img src="Images/apartment_4.jpg" alt="About " width="600" height="600">
+			</a>
+	<div class="desc"><b>About Us!</b></div>
+			</div>
+		</div>
+		
+		<div class="responsive">
+			<div class="gallery">
+    <a href="about.html">
+		<img src="Images/apartment_5.jpg" alt = "Floor Plan" width="600" height="600">
+			</a>
+	<div class="desc"><b>Floor Plan</b></div>
+			</div>
+		</div>
+		
+	</body>
 </html>
