@@ -7,56 +7,64 @@
 			<link rel="stylesheet" type="text/css" href=style.css>
     <style type ="text/css">
 		.heading{display:inline-block; width:100%;}
-		.trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
-		</style>
-	
-				</head>
+		.trim{max-height:200px;overflow:hidden;position:center}
+		body{
+			height:700px;
+			background: linear-gradient(to top, #e6ffe6 0%, #ffffff 70%)
+		}
+	</style>
+	</head>
 	<body>
 		<div class ="heading">
-			
-			<table border ="0" align="left" style="display:inline-table;">
+			<table border ="0" align="left" style="display:inline-table; padding-top:2.5%; padding-bottom: 1%;" >
 				<tr>
 					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
-					<td><a href="AdminDashboard.html" style="padding-right:10px">Home</a></td>
-					<td><a href="about.html" style="padding-right:10px">About Us</a></td>
-					<td><a href="locations.html" style="padding-right:10px">Locations</a></td>
-					<td><a href="contact.html" style="padding-right:10px">Contact Us</a></td>
+				</tr>
+			</table>
+			<table border ="0" style="display:inline-table; padding-left:20%">
+				<tr>
+					
+					<div class ="mb">
+						<td><li><a href="AdminDashboard.html" style="padding-right:10px">Home</a></li></td>
+						<td><li><a href="about.html" style="padding-right:10px">About Us</a><li></td>
+						<td><li><a href="locations.html" style="padding-right:10px">Locations</a></li></td>
+						<td><li><a href="contact.html" style="padding-right:10px">Contact Us</a></li></td>
+					</div>
 				</tr>
 			</table>
 			
-			<table border ="0" align="right" style="display:inline-table; padding-bottom: 1%;" >
+			<table border ="0" align="right" style="display:inline-table; padding-top:2.5%; padding-bottom: 1%;" >
 				<tr>
 					<td>Admin</td>
 					<td><a href="index.html"><button class="login" type="button">Logout</button></a></td>
 				</tr>
 			</table>
-			
-			
 		</div>
 		
 		<div class="trim">
-			<img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be changed-->
+			<h2>ECMC</h2>
+			<img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;">
+				<img class="img" src="Images/apartment_2.jpg" style="border-radius: 10px; margin-top:-250px;">
+					<img class="img" src="Images/apartment_3.jpg" style="border-radius: 10px; margin-top:-250px;">
+						<img class="img" src="Images/apartment_4.jpg" style="border-radius: 10px; margin-top:-250px;">
+							<img class="img" src="Images/apartment_5.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be hanged-->
+								<script type = "text/javascript" src="slideshow.js">showSlides()</script>
+								</div>
+		<div class="container">
+			<nav>
+				<div id ="sidebar"><br><br>
+					<ul>
+						<li><a href="AdminDashboard.html">Dashboard</a></li><br><br>
+						<li><a href="AdminMessages.html">Messages</a></li><br><br>
+						<li><a href="AdminDirectory.html">Directory</a></li><br><br>
+						<li><a href="AdminAccount.html">Account</a></li>
+					</ul>
 				</div>
-		<style>
-			.container { position:absolute; padding:0 0 0 100%; }
-			#sidebar {position:absolute; left:2%;}
-			#header { border:0px solid #000; width:50%; height:20%; margin:0 0 5% 0;}
-			#content {position: absolute; left:15%; width:80%; height:50%; margin:0px 0px 0px ;}
-			#footer { position:absolute; left:0%; border:1px solid #000; width:100%; height:50px;}
-			</style>
-	<div class="container">
-		<nav>
-			<div id ="sidebar"><br><br>
-			
-			<a href="AdminDashboard.html">Dashboard</a><br><br>
-			<a href="AdminMessages.html">Messages</a><br><br>
-			<a href="AdminDirectory.html">Directory</a><br><br>
-			<a href="AdminAccount.html">Account</a>
-			</div>
-		</nav>
+			</nav>
 		<div id="content">
-			<center style="padding-top: 2%; padding-bottom: 5%; font-size: large;">Messages</center>
-			<table border="2"; width=100%; height=180px;>
+			<center style="padding-top: 5%; padding-bottom: 5%; font-size: 150%;">Messages</center>
+			<center style="padding-left:10%">
+				<table border="2"; width=100%; height=180px; bgcolor=#ffffff>
 				<tr height=5%; bgcolor=#C0C0C0>
 					<th>Select All</th>
 					<th> Subject</th>
