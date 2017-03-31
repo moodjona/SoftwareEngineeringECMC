@@ -5,6 +5,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<title>Home</title>
 			<link rel="stylesheet" type="text/css" href=style.css>
+			<script type ="text/javascript" src=login.js></script>
     <style type ="text/css">
 		.heading{display:inline-block; width:100%;}
 		.trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
@@ -63,7 +64,7 @@
 			<table border ="0" align="left" style="display:inline-table">
 				<tr>
 					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
-					<td><a href="Home.html" style="margin-right:10px">Home</a></td>
+					<td><a href="index.html" style="margin-right:10px">Home</a></td>
 					<td><a href="about.html" style="margin-right:10px">About Us</a></td>
 					<td><a href="locations.html" style="margin-right:10px">Locations</a></td>
 					<td><a href="contact.html" style="margin-right:10px">Contact Us</a></td>
@@ -72,13 +73,11 @@
 			
 			<table border ="0" align="right" style="display:inline-table" >
 				<tr>
-					<td><input class="username" type="text" name="Username" placeholder="Username" /></td>
-					<td><input class="password" type="text" name="Password" placeholder="Password"/></td>
-					<td><button type="submit" name="Login">Login</button></td>
+					<td><input  type="text" placeholder="Username" id="text1"/></td>
+					<td><input  type="password" placeholder="Password"id="text2"/></td>
+					<td><button type="button" value="Login" onclick="login()">Login</button></td>
 				</tr>
 			</table>
-			
-			
 		</div>
 		
 		<div class="trim">
