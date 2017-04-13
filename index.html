@@ -9,69 +9,32 @@
     <style type ="text/css">
 		.heading{display:inline-block; width:100%;}
 		.trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
-		div.gallery {
-			border: 1px solid #ccc;
+		body{
+			height:700px;
+			background: linear-gradient(to top, #e6ffe6 0%, #ffffff 70%)
 		}
 	
-	div.gallery:hover {
-		border: 1px solid #777;
-	}
-	
-	div.gallery img {
-		width: 100%;
-		height: 150px;
-	}
-	
-	div.desc {
-		padding: 15px;
-		text-align: center;
-	}
-	
-	* {
-		box-sizing: border-box;
-	}
-	
-	.responsive {
-		padding: 0 6px;
-		float: left;
-		width: 24.99999%;
-	}
-	
-	@media only screen and (max-width: 700px){
-		.responsive {
-			width: 49.99999%;
-			margin: 6px 0;
-		}
-	}
-	
-	@media only screen and (max-width: 500px){
-		.responsive {
-			width: 100%;
-		}
-	}
-	
-	.clearfix:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
 	</style>
-	
-				</head>
+	</head>
 	<body>
 		<div class ="heading">
-			
-			<table border ="0" align="left" style="display:inline-table">
+			<table border ="0" align="left" style="display:inline-table; padding-top:1.5%; padding-bottom: 1%;" >
 				<tr>
 					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
-					<td><a href="index.html" style="margin-right:10px">Home</a></td>
-					<td><a href="about.html" style="margin-right:10px">About Us</a></td>
-					<td><a href="locations.html" style="margin-right:10px">Locations</a></td>
-					<td><a href="contact.html" style="margin-right:10px">Contact Us</a></td>
+				</tr>
+			</table>
+			<table border ="0" style="display:inline-table; padding-left:20%">
+				<tr>
+					<div class ="mb">
+						<td><li><a href="index.html" style="padding-right:10px">Home</a></li></td>
+						<td><li><a href="about.html" style="padding-right:10px">About Us</a><li></td>
+						<td><li><a href="locations.html" style="padding-right:10px">Locations</a></li></td>
+						<td><li><a href="contact.html" style="padding-right:10px">Contact Us</a></li></td>
+					</div>
 				</tr>
 			</table>
 			
-			<table border ="0" align="right" style="display:inline-table" >
+			<table border ="0" align="right" style="display:inline-table; padding-top:1.5%;">
 				<tr>
 					<td><input  type="text" placeholder="Username" id="text1"/></td>
 					<td><input  type="password" placeholder="Password"id="text2"/></td>
@@ -81,11 +44,17 @@
 		</div>
 		
 		<div class="trim">
-			<img class="img" src="Images/apartment_1.jpg" style="margin-top:-20%"><!-- margin-top is there to show a better part of the image, can be changed-->
-				</div>
+			<h2>ECMC</h2>
+			<img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;">
+			<img class="img" src="Images/apartment_2.jpg" style="border-radius: 10px; margin-top:-250px;">
+			<img class="img" src="Images/apartment_3.jpg" style="border-radius: 10px; margin-top:-250px;">
+			<img class="img" src="Images/apartment_4.jpg" style="border-radius: 10px; margin-top:-250px;">
+			<img class="img" src="Images/apartment_5.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be hanged-->
+			<script type = "text/javascript" src="slideshow.js">showSlides()</script>
+		</div>
 		<nav>
 		</nav>
-		<center><h2>Welcome to Equity Captital Management Corporation</h2></center>
+		<center><h1>Welcome to Equity Captital Management Corporation</h1></center>
 		
 		<div class="responsive">
 			<div class="gallery">
