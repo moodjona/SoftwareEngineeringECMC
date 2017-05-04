@@ -29,11 +29,15 @@ $count=mysql_num_rows($result);
 if($count==1){
 
 // Register $myusername, $mypassword and redirect to file "login_success.php"
-session_register("myusername");
-session_register("mypassword");
-header("location:login_success.php");
+$_SESSION['myusername'] = $myusername;
+$_SESSION['mypassword'] = $mypassword;
+
+echo "Login Successfull";
+
+header("Location: ResidentDashboard.html");
 }
-else {
+else{
 echo "Wrong Username or Password";
 }
+
 ?>
