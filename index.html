@@ -11,55 +11,55 @@
 		div.gallery {
 			border: 1px solid #ccc;
 		}
-	
+
 	div.gallery:hover {
 		border: 1px solid #777;
 	}
-	
+
 	div.gallery img {
 		width: 100%;
 		height: 150px;
 	}
-	
+
 	div.desc {
 		padding: 15px;
 		text-align: center;
 	}
-	
+
 	* {
 		box-sizing: border-box;
 	}
-	
+
 	.responsive {
 		padding: 0 6px;
 		float: left;
 		width: 24.99999%;
 	}
-	
+
 	@media only screen and (max-width: 700px){
 		.responsive {
 			width: 49.99999%;
 			margin: 6px 0;
 		}
 	}
-	
+
 	@media only screen and (max-width: 500px){
 		.responsive {
 			width: 100%;
 		}
 	}
-	
+
 	.clearfix:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
 	</style>
-	
+
 				</head>
 	<body>
 		<div class ="heading">
-			
+
 			<table border ="0" align="left" style="display:inline-table">
 				<tr>
 					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
@@ -69,25 +69,28 @@
 					<td><a href="contact.html" style="margin-right:10px">Contact Us</a></td>
 				</tr>
 			</table>
-			
+			<form name="logindetail" action="check_resident_login.php" method="post">
 			<table border ="0" align="right" style="display:inline-table" >
 				<tr>
-					<td><input class="username" type="text" name="Username" placeholder="Username" /></td>
-					<td><input class="password" type="text" name="Password" placeholder="Password"/></td>
-					<td><button type="submit" name="Login">Login</button></td>
+
+					<td><input class="username" type="text" name="myusername" placeholder="Username" /></td>
+					<td><input class="password" type="text" name="mypassword" placeholder="Password"/></td>
+					<td><input type="submit" name="Login" /></td>
+
 				</tr>
 			</table>
-			
-			
+            </form>
+
+
 		</div>
-		
+
 		<div class="trim">
 			<img class="img" src="Images/apartment_1.jpg" style="margin-top:-20%"><!-- margin-top is there to show a better part of the image, can be changed-->
 				</div>
 		<nav>
 		</nav>
 		<center><h2>Welcome to Equity Captital Management Corporation</h2></center>
-		
+
 		<div class="responsive">
 			<div class="gallery">
     <a href="locations.html">
@@ -96,8 +99,8 @@
 	<div class="desc"><b>Locations</b></div>
 			</div>
 		</div>
-		
-		
+
+
 		<div class="responsive">
 			<div class="gallery">
     <a href="contact.html">
@@ -106,7 +109,7 @@
 	<div class="desc"><b>Contact</b></div>
 			</div>
 		</div>
-		
+
 		<div class="responsive">
 			<div class="gallery">
     <a href="about.html">
@@ -115,7 +118,7 @@
 	<div class="desc"><b>About Us!</b></div>
 			</div>
 		</div>
-		
+
 		<div class="responsive">
 			<div class="gallery">
     <a href="about.html">
@@ -124,6 +127,6 @@
 	<div class="desc"><b>Floor Plan</b></div>
 			</div>
 		</div>
-		
+
 	</body>
 </html>
