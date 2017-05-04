@@ -3,22 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-			<title>Home</title>
+			<title>Document</title>
 			<link rel="stylesheet" type="text/css" href=style.css>
-			<script type ="text/javascript" src=login.js></script>
     <style type ="text/css">
 		.heading{display:inline-block; width:100%;}
-		.trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
+		.trim{max-height:200px;overflow:hidden;position:center}
 		body{
 			height:700px;
 			background: linear-gradient(to top, #e6ffe6 0%, #ffffff 70%);
 		}
-
-	</style>
-	</head>
-	<body>
+	article{
+		text-align:left;
+		padding-left: 5%;
+		overflow: hidden;
+	}
+ </style>
+ </head>
+ <body>
 		<div class ="heading">
-			<table border ="0" align="left" style="display:inline-table; padding-top:1.5%; padding-bottom: 1%;" >
+			<table border ="0" align="left" style="display:inline-table; padding-top:1.5%; padding-bottom:1%;" >
 				<tr>
 					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
 				</tr>
@@ -46,15 +49,13 @@
 		<div class="trim">
 			<h2>ECMC</h2>
 			<img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;">
-			<img class="img" src="Images/apartment_2.jpg" style="border-radius: 10px; margin-top:-250px;">
-			<img class="img" src="Images/apartment_3.jpg" style="border-radius: 10px; margin-top:-250px;">
-			<img class="img" src="Images/apartment_4.jpg" style="border-radius: 10px; margin-top:-250px;">
-			<img class="img" src="Images/apartment_5.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be hanged-->
-			<script type = "text/javascript" src="slideshow.js">showSlides()</script>
-		</div>
-		<nav>
-		</nav>
-		<center><h1>Welcome to Equity Captital Management Corporation</h1></center>
+				<img class="img" src="Images/apartment_2.jpg" style="border-radius: 10px; margin-top:-250px;">
+					<img class="img" src="Images/apartment_3.jpg" style="border-radius: 10px; margin-top:-250px;">
+						<img class="img" src="Images/apartment_4.jpg" style="border-radius: 10px; margin-top:-250px;">
+							<img class="img" src="Images/apartment_5.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be hanged-->
+								<script type = "text/javascript" src="slideshow.js">showSlides()</script>
+								</div>
+		<center style="padding-top:5%; padding-bottom:5%"><h1>Welcome to Equity Captital Management Corporation</h1></center>
 		
 		<div class="responsive">
 			<div class="gallery">

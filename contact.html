@@ -1,46 +1,61 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href=style.css>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>Document</title>
+			<link rel="stylesheet" type="text/css" href=style.css>
     <style type ="text/css">
-        .heading{display:inline-block; width:100%;}
-        .trim{max-height:200px;overflow:hidden;position:center} <!--Main div that controls the size displayed-->
-    </style>
-
-  </head>
-  <body>
-      <div class ="heading">
-          
-         <table border ="0" align="left" style="display:inline-table;">
-              <tr>
-        <td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
-        <td><a href="index.html" style="padding-right:10px">Home</a></td>
-        <td><a href="about.html" style="padding-right:10px">About Us</a></td>
-        <td><a href="locations.html" style="padding-right:10px">Locations</a></td>
-        <td><a href="contact.html" style="padding-right:10px">Contact Us</a></td>
-          </tr>
-          </table>
-
-        <table border ="0" align="right" style="display:inline-table; padding-bottom: 1%;" >
-            <tr>
-                <td><input class="username" type="text" name="Username" placeholder="Username" style="border-width: 1px; border-radius: 4px"></td>
-                <td><input class="password" type="text" name="Password" placeholder="Password" style="border-width: 1px; border-radius: 4px"></td>
-                <td><button class="login" type="button">Login</button></td>
-            </tr>
-        </table>
-
-      
-      </div>
-
-      <div class="trim">
-      <img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be changed-->
-      </div>
-    <nav>
-    </nav>
-      <center style="padding-top: 2%; padding-bottom: 5%; font-size: large;">Contact Us</center>
+		.heading{display:inline-block; width:100%;}
+		.trim{max-height:200px;overflow:hidden;position:center}
+		body{
+			height:700px;
+			background: linear-gradient(to top, #e6ffe6 0%, #ffffff 70%);
+		}
+	article{
+		text-align:left;
+		padding-left: 5%;
+		overflow: hidden;
+	}
+ </style>
+ </head>
+ <body>
+		<div class ="heading">
+			<table border ="0" align="left" style="display:inline-table; padding-top:1.5%; padding-bottom:1%;" >
+				<tr>
+					<td><input type="search" name="sitesearch" placeholder="Search" style="margin-right:20px"></td>
+				</tr>
+			</table>
+			<table border ="0" style="display:inline-table; padding-left:20%">
+				<tr>
+					<div class ="mb">
+						<td><li><a href="index.html" style="padding-right:10px">Home</a></li></td>
+						<td><li><a href="about.html" style="padding-right:10px">About Us</a><li></td>
+						<td><li><a href="locations.html" style="padding-right:10px">Locations</a></li></td>
+						<td><li><a href="contact.html" style="padding-right:10px">Contact Us</a></li></td>
+					</div>
+				</tr>
+			</table>
+			
+			<table border ="0" align="right" style="display:inline-table; padding-top:1.5%;">
+				<tr>
+					<td><input  type="text" placeholder="Username" id="text1"/></td>
+					<td><input  type="password" placeholder="Password"id="text2"/></td>
+					<td><button type="button" value="Login" onclick="login()">Login</button></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="trim">
+			<h2>ECMC</h2>
+			<img class="img" src="Images/apartment_1.jpg" style="border-radius: 10px; margin-top:-250px;">
+				<img class="img" src="Images/apartment_2.jpg" style="border-radius: 10px; margin-top:-250px;">
+					<img class="img" src="Images/apartment_3.jpg" style="border-radius: 10px; margin-top:-250px;">
+						<img class="img" src="Images/apartment_4.jpg" style="border-radius: 10px; margin-top:-250px;">
+							<img class="img" src="Images/apartment_5.jpg" style="border-radius: 10px; margin-top:-250px;"><!-- margin-top is there to show a better part of the image, can be hanged-->
+								<script type = "text/javascript" src="slideshow.js">showSlides()</script>
+								</div>
+		<h1><center>Contact Us</center></h1>
 
       <div class ="content">
 
@@ -54,6 +69,7 @@
                                 <tr>
                             <td>Complex: </td> 
                                 <td><select name="complex" size="1">
+								<option>N/A</option>
                                 <option>A</option>
                                 <option>B</option>
                                 <option>C</option>
@@ -65,6 +81,7 @@
                                 <tr>
                             <td>Apartment Number: </td>
                             <td><select name="apartnum" size="1">
+								<option>N/A</option>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -85,6 +102,7 @@
                                 <tr>
                             <td>Request Type: </td>
                             <td><select name="request" size="1">
+								<option>New Resident</option>
                                 <option>Work Order</option>
                                 <option>Payment</option>
                                 <option>General</option>
@@ -93,7 +111,7 @@
                                 </tr>
 
                             </table>
-                            <textarea cols="40" rows="10" name="messageblock">Enter Message...</textarea><br />
+                            <textarea cols="40" rows="10" name="messageblock" placeholder="Enter Message..."></textarea><br />
                             <input type="submit" value="Submit" name="messagesubmit" />
                 		</form>
                 	</content>
